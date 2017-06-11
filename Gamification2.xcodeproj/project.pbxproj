@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73B1EECD1D800C273BE /* AppDelegate.swift */; };
+		B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73D1EECD1D800C273BE /* ViewController.swift */; };
+		B21DB7411EECD1D800C273BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21DB73F1EECD1D800C273BE /* Main.storyboard */; };
+		B21DB7441EECD1D800C273BE /* Gamification2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B21DB7421EECD1D800C273BE /* Gamification2.xcdatamodeld */; };
+		B21DB7461EECD1D800C273BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21DB7451EECD1D800C273BE /* Assets.xcassets */; };
+		B21DB7491EECD1D800C273BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B21DB7381EECD1D700C273BE /* Gamification2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamification2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21DB73B1EECD1D800C273BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B21DB73D1EECD1D800C273BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B21DB7401EECD1D800C273BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B21DB7431EECD1D800C273BE /* Gamification2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gamification2.xcdatamodel; sourceTree = "<group>"; };
+		B21DB7451EECD1D800C273BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B21DB7481EECD1D800C273BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B21DB74A1EECD1D800C273BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B21DB7351EECD1D700C273BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B21DB72F1EECD1D700C273BE = {
+			isa = PBXGroup;
+			children = (
+				B21DB73A1EECD1D800C273BE /* Gamification2 */,
+				B21DB7391EECD1D700C273BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B21DB7391EECD1D700C273BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B21DB7381EECD1D700C273BE /* Gamification2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B21DB73A1EECD1D800C273BE /* Gamification2 */ = {
+			isa = PBXGroup;
+			children = (
+				B21DB73B1EECD1D800C273BE /* AppDelegate.swift */,
+				B21DB73D1EECD1D800C273BE /* ViewController.swift */,
+				B21DB73F1EECD1D800C273BE /* Main.storyboard */,
+				B21DB7451EECD1D800C273BE /* Assets.xcassets */,
+				B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */,
+				B21DB74A1EECD1D800C273BE /* Info.plist */,
+				B21DB7421EECD1D800C273BE /* Gamification2.xcdatamodeld */,
+			);
+			path = Gamification2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B21DB7371EECD1D700C273BE /* Gamification2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21DB74D1EECD1D800C273BE /* Build configuration list for PBXNativeTarget "Gamification2" */;
+			buildPhases = (
+				B21DB7341EECD1D700C273BE /* Sources */,
+				B21DB7351EECD1D700C273BE /* Frameworks */,
+				B21DB7361EECD1D700C273BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gamification2;
+			productName = Gamification2;
+			productReference = B21DB7381EECD1D700C273BE /* Gamification2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B21DB7301EECD1D700C273BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "PENN STATE ABINGTON";
+				TargetAttributes = {
+					B21DB7371EECD1D700C273BE = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = CXJ59Y9QZ2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B21DB7331EECD1D700C273BE /* Build configuration list for PBXProject "Gamification2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B21DB72F1EECD1D700C273BE;
+			productRefGroup = B21DB7391EECD1D700C273BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B21DB7371EECD1D700C273BE /* Gamification2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B21DB7361EECD1D700C273BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21DB7491EECD1D800C273BE /* LaunchScreen.storyboard in Resources */,
+				B21DB7461EECD1D800C273BE /* Assets.xcassets in Resources */,
+				B21DB7411EECD1D800C273BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B21DB7341EECD1D700C273BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21DB7441EECD1D800C273BE /* Gamification2.xcdatamodeld in Sources */,
+				B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */,
+				B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B21DB73F1EECD1D800C273BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B21DB7401EECD1D800C273BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B21DB7481EECD1D800C273BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B21DB74B1EECD1D800C273BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B21DB74C1EECD1D800C273BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B21DB74E1EECD1D800C273BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CXJ59Y9QZ2;
+				INFOPLIST_FILE = Gamification2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PENNSTATEABINGTON.Gamification2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B21DB74F1EECD1D800C273BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CXJ59Y9QZ2;
+				INFOPLIST_FILE = Gamification2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PENNSTATEABINGTON.Gamification2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B21DB7331EECD1D700C273BE /* Build configuration list for PBXProject "Gamification2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21DB74B1EECD1D800C273BE /* Debug */,
+				B21DB74C1EECD1D800C273BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21DB74D1EECD1D800C273BE /* Build configuration list for PBXNativeTarget "Gamification2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21DB74E1EECD1D800C273BE /* Debug */,
+				B21DB74F1EECD1D800C273BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B21DB7421EECD1D800C273BE /* Gamification2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B21DB7431EECD1D800C273BE /* Gamification2.xcdatamodel */,
+			);
+			currentVersion = B21DB7431EECD1D800C273BE /* Gamification2.xcdatamodel */;
+			path = Gamification2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B21DB7301EECD1D700C273BE /* Project object */;
+}

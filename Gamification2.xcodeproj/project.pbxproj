@@ -13,6 +13,7 @@
 		B21DB7441EECD1D800C273BE /* Gamification2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B21DB7421EECD1D800C273BE /* Gamification2.xcdatamodeld */; };
 		B21DB7461EECD1D800C273BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21DB7451EECD1D800C273BE /* Assets.xcassets */; };
 		B21DB7491EECD1D800C273BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */; };
+		B26B90C61EEED7F400C32496 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26B90C51EEED7F400C32496 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B21DB7451EECD1D800C273BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21DB7481EECD1D800C273BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B21DB74A1EECD1D800C273BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26B90C51EEED7F400C32496 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B21DB73B1EECD1D800C273BE /* AppDelegate.swift */,
 				B21DB73D1EECD1D800C273BE /* ViewController.swift */,
+				B26B90C51EEED7F400C32496 /* NewViewController.swift */,
 				B21DB73F1EECD1D800C273BE /* Main.storyboard */,
 				B21DB7451EECD1D800C273BE /* Assets.xcassets */,
 				B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				B21DB7441EECD1D800C273BE /* Gamification2.xcdatamodeld in Sources */,
 				B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */,
 				B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */,
+				B26B90C61EEED7F400C32496 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 				B21DB74F1EECD1D800C273BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

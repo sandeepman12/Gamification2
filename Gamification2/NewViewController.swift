@@ -13,12 +13,36 @@ class NewViewController: UIViewController
 {
     @IBOutlet weak var gameName: UITextField!
     @IBOutlet weak var gameDesc: UITextField!
+    @IBOutlet weak var output: UILabel!
+    
+    
     
     //NSManageObject
     //this can be used thruout the CLASS
     //very useful to call in here
     var context = (UIApplication.shared.delegate as! AppDelegate)
         .persistentContainer.viewContext
+    
+    //This shows if the user wants to save the game as a Long Term or Short Term for their game
+    @IBAction func `switch`(_ sender: UISwitch)
+    {
+        if (sender.isOn == true)
+            {
+                output.text = "Long Term"
+            }
+        else
+            {
+                output.text = "Short Term"
+            }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     //custom save function for context
     func save()

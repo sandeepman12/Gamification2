@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C907D01EEEF62F0020E0E9 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */; };
 		B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73B1EECD1D800C273BE /* AppDelegate.swift */; };
 		B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73D1EECD1D800C273BE /* ViewController.swift */; };
 		B21DB7411EECD1D800C273BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21DB73F1EECD1D800C273BE /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadViewController.swift; path = ../LoadViewController.swift; sourceTree = "<group>"; };
 		B21DB7381EECD1D700C273BE /* Gamification2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamification2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21DB73B1EECD1D800C273BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B21DB73D1EECD1D800C273BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B21DB73B1EECD1D800C273BE /* AppDelegate.swift */,
 				B21DB73D1EECD1D800C273BE /* ViewController.swift */,
 				B26B90C51EEED7F400C32496 /* NewViewController.swift */,
+				A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */,
 				B21DB73F1EECD1D800C273BE /* Main.storyboard */,
 				B21DB7451EECD1D800C273BE /* Assets.xcassets */,
 				B21DB7471EECD1D800C273BE /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C907D01EEEF62F0020E0E9 /* LoadViewController.swift in Sources */,
 				B21DB7441EECD1D800C273BE /* Gamification2.xcdatamodeld in Sources */,
 				B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */,
 				B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */,

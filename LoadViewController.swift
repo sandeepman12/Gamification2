@@ -54,6 +54,7 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    //delete function
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)
@@ -72,7 +73,7 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
 
-    
+    //retrives the data and shows it on the table
     func fetchData()
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)

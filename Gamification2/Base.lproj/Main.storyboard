@@ -101,7 +101,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="BuK-gp-Tzg"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backButton2" id="BuK-gp-Tzg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgO-X5-4Vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119.2" y="737.18140929535241"/>
+            <point key="canvasLocation" x="60" y="866"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="FKS-tM-L9G">

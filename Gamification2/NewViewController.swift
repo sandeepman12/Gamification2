@@ -36,14 +36,6 @@ class NewViewController: UIViewController
             }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
     //custom save function for context
     func save()
     {

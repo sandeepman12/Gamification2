@@ -7,29 +7,64 @@
 //
 
 import UIKit
+import CoreData
 
-class LoadViewController: UIViewController {
-
-    override func viewDidLoad() {
+class LoadViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
+{
+    @IBOutlet weak var tableView: UITableView!
+    
+    var gameNameArray:[Game] = []
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        self.fetchData()
+        self.tableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //# of sections
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        return 1
     }
-    */
+    
+    //# of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return gameNameArray.count
+    }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        //this is to add the scores depending on how many items are there
+//        for i in 1...gameNameArray.count
+//        {
+//            let score = i * 10
+//            self.scoreLabel.text = "Score: \(score)"
+//        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let name = gameNameArray[indexPath.row]
+        cell.textLabel!.text = name.gameName
+        
+        return cell
+    }
+    
+    func fetchData()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate)
+            .persistentContainer.viewContext
+        
+        do {
+            gameNameArray = try context.fetch(Game.fetchRequest())
+        } catch {
+            print(error)
+        }
+    }
+
+    
 }

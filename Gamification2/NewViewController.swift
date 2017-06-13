@@ -15,6 +15,7 @@ class NewViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var gameName: UITextField!
     @IBOutlet weak var gameDesc: UITextField!
     @IBOutlet weak var output: UILabel!
+    @IBOutlet weak var inputWarning: UILabel!
 
     // this is required to save the data to the phone
     // references the ".viewContext" method in the AppDelegat Class
@@ -90,6 +91,7 @@ class NewViewController: UIViewController, UITextFieldDelegate
         {
             if gameName.text == ""
             {
+                inputWarning.isHidden = false
                 return false
             }
         }

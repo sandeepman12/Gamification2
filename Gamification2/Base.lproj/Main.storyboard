@@ -192,6 +192,13 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="backButton" id="WPT-vu-pWh"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plese Enter The Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-wi-xdH">
+                                <rect key="frame" x="16" y="135" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" red="0.9877198338508606" green="0.11506066471338272" blue="0.02808905765414238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0061867805197834969" green="0.098916061222553253" blue="0.29074481129646301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0061867805199999999" green="0.098916061220000004" blue="0.29074481130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -199,6 +206,7 @@
                     <connections>
                         <outlet property="gameDesc" destination="P8W-1Q-odv" id="10s-ks-ac8"/>
                         <outlet property="gameName" destination="UIg-TF-uBI" id="3Cx-AF-r8o"/>
+                        <outlet property="inputWarning" destination="hVC-wi-xdH" id="icn-wP-3TI"/>
                         <outlet property="output" destination="IVw-6M-DPb" id="316-Me-bzF"/>
                     </connections>
                 </viewController>

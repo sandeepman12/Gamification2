@@ -81,6 +81,7 @@ class NewViewController: UIViewController
         }
     }
     
+    //This function shows a message telling the user to enter data into the textfields if they try to hit the save button without inputting any information
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
     {
         if identifier == "save"

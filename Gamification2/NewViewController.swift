@@ -36,13 +36,13 @@ class NewViewController: UIViewController, UITextFieldDelegate
     @IBAction func `switch`(_ sender: UISwitch)
     {
         if (sender.isOn == true)
-            {
-                output.text = "Long Term"
-            }
+        {
+            output.text = "Long Term"
+        }
         else
-            {
-                output.text = "Short Term"
-            }
+        {
+            output.text = "Short Term"
+        }
     }
 
     override func viewDidLoad()
@@ -56,8 +56,6 @@ class NewViewController: UIViewController, UITextFieldDelegate
     //This is what happens when the "save" button is clicked in the "Main.storyboard"
     @IBAction func saveButton(_ sender: Any)
     {
-        
-        
         //if the textfields ("gameName") is not empty, this happens
         if gameName.text != ""
         {

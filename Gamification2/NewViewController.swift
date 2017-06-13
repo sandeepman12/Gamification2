@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewViewController: UIViewController
+class NewViewController: UIViewController, UITextFieldDelegate
 {
     //variables
     @IBOutlet weak var gameName: UITextField!
@@ -47,6 +47,9 @@ class NewViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        //needed to dismiss the keyboard when pressed return
+        self.gameName.delegate = self; self.gameDesc.delegate = self
     }
     
     //This is what happens when the "save" button is clicked in the "Main.storyboard"
@@ -80,6 +83,7 @@ class NewViewController: UIViewController
         }
     }
     
+    //if the "gameName" is empty, the "save" button wont be going to the next scene
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
     {
         if identifier == "save"
@@ -97,6 +101,13 @@ class NewViewController: UIViewController
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         view.endEditing(true)
+    }
+    
+    //when pressed the return key, keyboard dismisses
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        gameName.resignFirstResponder(); gameDesc.resignFirstResponder()
+        return true
     }
     
 }

@@ -57,7 +57,7 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    //delete function
+    //deletes the users game file from the tableView
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)

@@ -52,6 +52,8 @@ class NewViewController: UIViewController
     //This is what happens when the "save" button is clicked in the "Main.storyboard"
     @IBAction func saveButton(_ sender: Any)
     {
+        
+        
         //if the textfields ("gameName") is not empty, this happens
         if gameName.text != ""
         {
@@ -76,11 +78,31 @@ class NewViewController: UIViewController
             //dimisses the keyboard
             gameName.resignFirstResponder(); gameDesc.resignFirstResponder()
         }
-        else
-        {
-            print("Please Enter a GAME name")
-        }
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
+    {
+        if identifier == "save"
+        {
+            if gameName.text == ""
+            {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+//    override func shouldPerformSegueWithIdentifier(identifier: "saveSegue", sender: AnyObject?) -> Bool
+//    {
+//        if !(gameName.text == "")
+//        {
+//            return true
+//        }
+//        
+//    }
+    
+    
     
     //dismiss the keyboard when clicked around the view
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

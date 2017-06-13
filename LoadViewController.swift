@@ -54,6 +54,26 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    //delete function
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate)
+            .persistentContainer.viewContext
+        
+        if editingStyle == .delete
+        {
+            let user = gameNameArray[indexPath.row]
+            context.delete(user)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            //custom FETCH function call
+            fetchData()
+        }
+        
+        tableView.reloadData()
+    }
+
+    //retrives the data and shows it on the table
     func fetchData()
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)

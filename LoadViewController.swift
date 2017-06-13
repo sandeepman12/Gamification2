@@ -88,6 +88,4 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
             print(error)
         }
     }
-
-    
 }

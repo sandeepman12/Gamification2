@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewViewController: UIViewController
+class NewViewController: UIViewController, UITextFieldDelegate
 {
     //variables
     @IBOutlet weak var gameName: UITextField!
@@ -36,25 +36,26 @@ class NewViewController: UIViewController
     @IBAction func `switch`(_ sender: UISwitch)
     {
         if (sender.isOn == true)
-            {
-                output.text = "Long Term"
-            }
+        {
+            output.text = "Long Term"
+        }
         else
-            {
-                output.text = "Short Term"
-            }
+        {
+            output.text = "Short Term"
+        }
     }
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        //needed to dismiss the keyboard when pressed return
+        self.gameName.delegate = self; self.gameDesc.delegate = self
     }
     
     //This is what happens when the "save" button is clicked in the "Main.storyboard"
     @IBAction func saveButton(_ sender: Any)
     {
-        
-        
         //if the textfields ("gameName") is not empty, this happens
         if gameName.text != ""
         {
@@ -100,6 +101,13 @@ class NewViewController: UIViewController
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         view.endEditing(true)
+    }
+    
+    //when pressed the return key, keyboard dismisses
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        gameName.resignFirstResponder(); gameDesc.resignFirstResponder()
+        return true
     }
     
 }

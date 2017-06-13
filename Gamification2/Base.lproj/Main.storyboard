@@ -374,6 +374,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0015673177549999999" green="0.098209179940000002" blue="0.28877234460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="category_1" destination="cbL-Nm-5xY" id="1i6-Sn-PYo"/>
+                        <outlet property="category_2" destination="t7r-Jl-mPB" id="FVh-9q-vsh"/>
+                        <outlet property="category_3" destination="hvZ-by-mbk" id="Gkr-3w-BQt"/>
+                        <outlet property="category_4" destination="17F-oO-OYI" id="9VM-MA-cHd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDi-Rm-RjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -93,17 +93,6 @@ class NewViewController: UIViewController
         return true
     }
     
-//    override func shouldPerformSegueWithIdentifier(identifier: "saveSegue", sender: AnyObject?) -> Bool
-//    {
-//        if !(gameName.text == "")
-//        {
-//            return true
-//        }
-//        
-//    }
-    
-    
-    
     //dismiss the keyboard when clicked around the view
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {

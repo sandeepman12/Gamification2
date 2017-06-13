@@ -11,17 +11,25 @@ import CoreData
 
 class NewViewController: UIViewController
 {
+    //variables
     @IBOutlet weak var gameName: UITextField!
     @IBOutlet weak var gameDesc: UITextField!
     @IBOutlet weak var output: UILabel!
-    
-    
-    
-    //NSManageObject
-    //this can be used thruout the CLASS
-    //very useful to call in here
+
+    // this is required to save the data to the phone
+    // references the ".viewContext" method in the AppDelegat Class
     var context = (UIApplication.shared.delegate as! AppDelegate)
         .persistentContainer.viewContext
+    
+    //custom save function for context using the "context" reference variable
+    func save()
+    {
+        do {
+            try context.save()
+        } catch {
+            print(error)
+        }
+    }
     
     //This shows if the user wants to save the game as a Long Term or Short Term for their game
     @IBAction func `switch`(_ sender: UISwitch)
@@ -35,42 +43,40 @@ class NewViewController: UIViewController
                 output.text = "Short Term"
             }
     }
-    
-    //custom save function for context
-    func save()
-    {
-        do {
-            try context.save()
-        } catch {
-            print(error)
-        }
-    }
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    //This is what happens when the "save" button is clicked in the "Main.storyboard"
     @IBAction func saveButton(_ sender: Any)
     {
-        //if the textfields are not empty
+        //if the textfields ("gameName") is not empty, this happens
         if gameName.text != ""
         {
+            //reference a variable to an ENTITY in the "Gamification2.xcdatamodeld"
             let newGame = NSEntityDescription.insertNewObject(forEntityName: "Game", into: context)
+            
+            //sets the attributes in the "Gamification2.xcdatamodeld" for the "Game" ENTITY
+            /*
+             attributes: "gameName" & "gameDesc"
+             */
+            
             newGame.setValue(self.gameName!.text, forKey: "gameName")
             newGame.setValue(self.gameDesc!.text, forKey: "gameDesc")
             
-            // call the custom save function
+            // calls the custom save function to save data to the phone
             save()
             
-            //erase the name after the save button is clicked
+            //erase the name from the textfield after the save button is clicked
+            //so the user gets a blank text fields after hitting the save button
             gameName.text = ""; gameDesc.text = ""
             
-            //dimiss the keyboard
+            //dimisses the keyboard
             gameName.resignFirstResponder(); gameDesc.resignFirstResponder()
-        } else
+        }
+        else
         {
             print("Please Enter a GAME name")
         }

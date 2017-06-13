@@ -11,14 +11,17 @@ import CoreData
 
 class LoadViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
+    //refernce to the tableView in the "Main.storyboard"
     @IBOutlet weak var tableView: UITableView!
     
+    //an array to hold the "Game" ENITTY
     var gameNameArray:[Game] = []
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+        //sets this class for the tableView Scene when clicked on "Load"
         tableView.delegate = self
         tableView.dataSource = self
         

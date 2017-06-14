@@ -11,14 +11,17 @@ import CoreData
 
 class LoadViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
+    //refernce to the tableView in the "Main.storyboard"
     @IBOutlet weak var tableView: UITableView!
     
+    //an array to hold the "Game" ENITTY
     var gameNameArray:[Game] = []
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+        //sets this class for the tableView Scene when clicked on "Load"
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -54,6 +57,7 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    //deletes the users game file from the tableView
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)
@@ -72,7 +76,7 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
 
-    
+    //retrives the data and shows it on the table
     func fetchData()
     {
         let context = (UIApplication.shared.delegate as! AppDelegate)
@@ -84,6 +88,4 @@ class LoadViewController: UIViewController, UITableViewDelegate, UITableViewData
             print(error)
         }
     }
-
-    
 }

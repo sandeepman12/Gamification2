@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07486031EF1A28F002FF54D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07486021EF1A28F002FF54D /* ActivitiesViewController.swift */; };
 		A0C907D01EEEF62F0020E0E9 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */; };
 		B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73B1EECD1D800C273BE /* AppDelegate.swift */; };
 		B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DB73D1EECD1D800C273BE /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A07486021EF1A28F002FF54D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadViewController.swift; path = ../LoadViewController.swift; sourceTree = "<group>"; };
 		B21DB7381EECD1D700C273BE /* Gamification2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamification2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21DB73B1EECD1D800C273BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B26B90C51EEED7F400C32496 /* NewViewController.swift */,
 				A0C907CF1EEEF62F0020E0E9 /* LoadViewController.swift */,
 				B26B90C91EEF1D9E00C32496 /* CategoryViewController.swift */,
+				A07486021EF1A28F002FF54D /* ActivitiesViewController.swift */,
 				B26B90CB1EEF1F5900C32496 /* AchivementViewController.swift */,
 				B21DB73F1EECD1D800C273BE /* Main.storyboard */,
 				B21DB7451EECD1D800C273BE /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				B21DB73E1EECD1D800C273BE /* ViewController.swift in Sources */,
 				B21DB73C1EECD1D800C273BE /* AppDelegate.swift in Sources */,
 				B26B90CC1EEF1F5900C32496 /* AchivementViewController.swift in Sources */,
+				A07486031EF1A28F002FF54D /* ActivitiesViewController.swift in Sources */,
 				B26B90CA1EEF1D9E00C32496 /* CategoryViewController.swift in Sources */,
 				B26B90C61EEED7F400C32496 /* NewViewController.swift in Sources */,
 			);

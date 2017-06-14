@@ -42,6 +42,9 @@
                                 <rect key="frame" x="87" y="523" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Send"/>
+                                <connections>
+                                    <segue destination="BFs-a9-jhN" kind="show" id="SeH-0r-ACu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy0-cH-pZW" userLabel="newButton">
                                 <rect key="frame" x="87" y="189" width="200" height="60"/>
@@ -566,6 +569,7 @@
         <image name="4" width="70" height="101"/>
         <image name="Achievements" width="735" height="103"/>
         <image name="Back" width="390" height="256"/>
+        <image name="CONFIRM-1" width="437" height="103"/>
         <image name="Description" width="634" height="103"/>
         <image name="Download" width="530" height="103"/>
         <image name="Game-Name" width="562" height="103"/>

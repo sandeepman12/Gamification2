@@ -49,6 +49,14 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
             
             // calls the custom save function to save data to the phone
             save()
+            
+            //custom FETCH function call
+            fetchData()
+            self.tableView.reloadData()
+        }
+        else
+        {
+            print("activities")
         }
 
     }

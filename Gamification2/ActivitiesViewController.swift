@@ -15,7 +15,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     
     //an array to hold the "Game" ENITTY
-    var gameNameArray:[Game] = []
+    var gameNameArray:[Activity] = []
     
     // this is required to save the data to the phone
     // references the ".viewContext" method in the AppDelegat Class
@@ -25,9 +25,13 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
     //custom save function for context using the "context" reference variable
     func save()
     {
-        do {
+        do
+        {
             try context.save()
-        } catch {
+        }
+        
+        catch
+        {
             print(error)
         }
     }
@@ -38,7 +42,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
         if field.text != ""
         {
             //reference a variable to an ENTITY in the "Gamification2.xcdatamodeld"
-            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "Game", into: context)
+            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: context)
             
             //sets the attributes in the "Gamification2.xcdatamodeld" for the "Game" ENTITY
             /*
@@ -52,11 +56,11 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
             
             //custom FETCH function call
             fetchData()
-            self.tableView.reloadData()
+            tableView.reloadData()
         }
         else
         {
-            print("activities")
+            print("empty")
         }
 
     }
@@ -64,9 +68,6 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        self.fetchData()
-        self.tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -109,7 +110,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
             .persistentContainer.viewContext
         
         do {
-            gameNameArray = try context.fetch(Game.fetchRequest())
+            gameNameArray = try context.fetch(Activity.fetchRequest())
         } catch {
             print(error)
         }

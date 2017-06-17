@@ -7,8 +7,16 @@
         <attribute name="gameDesc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gameName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="HardActivity" representedClassName="HardActivity" syncable="YES" codeGenerationType="class">
+        <attribute name="activities" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MediumActivity" representedClassName="MediumActivity" syncable="YES" codeGenerationType="class">
+        <attribute name="activities" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Game" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Activity" positionX="-63" positionY="9" width="128" height="60"/>
+        <element name="Game" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="MediumActivity" positionX="-63" positionY="0" width="128" height="60"/>
+        <element name="HardActivity" positionX="-54" positionY="9" width="128" height="60"/>
     </elements>
 </model>

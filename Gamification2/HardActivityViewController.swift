@@ -1,21 +1,21 @@
 //
-//  ActivitiesViewController.swift
+//  HardActivityViewController.swift
 //  Gamification2
 //
-//  Created by Mostafa Apu on 6/14/17.
+//  Created by Mostafa Apu on 6/17/17.
 //  Copyright © 2017 PENN STATE ABINGTON. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource
+class HardActivityViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource
 {
     @IBOutlet weak var field: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    //an array to hold the "Activity" ENITTY
-    var gameNameArray:[Activity] = []
+    //an array to hold the "HardActivity" ENITTY
+    var gameNameArray:[HardActivity] = []
     
     // this is required to save the data to the phone
     // references the ".viewContext" method in the AppDelegat Class
@@ -42,9 +42,9 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
         if field.text != ""
         {
             //reference a variable to an ENTITY in the "Gamification2.xcdatamodeld"
-            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: context)
+            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "HardActivity", into: context)
             
-            //sets the attributes in the "Gamification2.xcdatamodeld" for the "Activity" ENTITY
+            //sets the attributes in the "Gamification2.xcdatamodeld" for the "HardActivity" ENTITY
             /*
              attributes: "activities"
              */
@@ -57,7 +57,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
             //custom FETCH function call
             fetchData()
             
-            //reloads the table to see the latest results
+            //reloads the table for any updates
             tableView.reloadData()
         }
         else
@@ -78,13 +78,11 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
         self.tableView.reloadData()
     }
     
-    // rows of the table depends on how many items are in the "gameNameArray"
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return gameNameArray.count
     }
     
-    // what actually adds to the tableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -120,7 +118,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
             .persistentContainer.viewContext
         
         do {
-            gameNameArray = try context.fetch(Activity.fetchRequest())
+            gameNameArray = try context.fetch(HardActivity.fetchRequest())
         } catch {
             print(error)
         }

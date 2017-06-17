@@ -29,7 +29,7 @@ class ActivitiesViewController: UIViewController, UITextFieldDelegate, UITableVi
         {
             try context.save()
         }
-        
+            
         catch
         {
             print(error)

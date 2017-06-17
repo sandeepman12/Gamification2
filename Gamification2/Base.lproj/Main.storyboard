@@ -497,11 +497,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMP-R6-6e4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3297" y="82"/>
+            <point key="canvasLocation" x="3306" y="91"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kms-al-dOg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbf-FK-iWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="1ct-4m-zHp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GdG-Ir-yLw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -511,7 +512,6 @@
                         <segue destination="HAi-8S-Uji" kind="relationship" relationship="rootViewController" id="PxO-7x-Ok9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbf-FK-iWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2486" y="464"/>
         </scene>
@@ -614,6 +614,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WPT-vu-pWh"/>
-        <segue reference="xOu-B5-vpC"/>
+        <segue reference="PJa-7z-t91"/>
     </inferredMetricsTieBreakers>
 </document>
